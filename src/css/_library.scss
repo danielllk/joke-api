@@ -1,0 +1,84 @@
+.Library {
+  @include container;
+  height: 100%;
+  padding: 25vh 0;
+  .library-container {
+    padding: 15px;
+    background-color: $darkGrey;
+    border: 2px solid $lighterGrey;
+    max-width: 800px;
+    text-align: center;
+    @media screen and (min-width: 1000px) {
+      min-width: 800px;
+      padding: 50px;
+    }
+    .chosen-joke-box {
+      padding: 5px;
+      margin: 10px;
+      border: 1px solid $lighterGrey;
+
+      .stars-active {
+        .react-stars {
+          margin: auto;
+        }
+      }
+      .stars-disable {
+        display: none;
+      }
+    }
+    .filter-stars {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 25px;
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+      }
+      .filter-star {
+        border: 1px solid orange;
+        max-width: 200px;
+        margin: 5px;
+        padding: 5px;
+        cursor: pointer;
+        span {
+          cursor: pointer;
+        }
+      }
+    }
+    .filter-by {
+      font-size: $small;
+    }
+    .img-home {
+      width: 45px;
+    }
+    p {
+      padding: 15px;
+    }
+    .go-home {
+      max-width: 100px;
+      border: 1px solid $lighterGrey;
+      padding: 10px;
+      margin: auto;
+      cursor: pointer;
+      p {
+        padding: 0;
+      }
+    }
+    .go-home:hover {
+      background-color: $lighterGrey;
+    }
+  }
+  .img-delete {
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    opacity: 0.2;
+  }
+  .img-delete:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}

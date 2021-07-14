@@ -1,0 +1,41 @@
+.Home {
+  @include container;
+  height: 100vh;
+  .joke-container {
+    padding: 15px;
+    background-color: $darkGrey;
+    border: 2px solid $lighterGrey;
+    max-width: 800px;
+    text-align: center;
+    @media screen and (min-width: 1000px) {
+      min-width: 800px;
+      padding: 50px;
+    }
+    div {
+      margin: auto;
+      padding-bottom: 5px;
+      cursor: pointer;
+      .img-library {
+        width: 50px;
+      }
+      #joke-test {
+        padding: 15px;
+      }
+      button {
+        @include button;
+      }
+      .save-btn-disable {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+    }
+    .go-library {
+      max-width: 100px;
+      border: 1px solid $lighterGrey;
+      padding: 10px;
+    }
+    .go-library:hover {
+      background-color: $lighterGrey;
+    }
+  }
+}

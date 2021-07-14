@@ -1,0 +1,15 @@
+@mixin container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin button {
+  background-color: $btnBack;
+  border: 1px solid $btnBorder;
+  padding: 10px 25px;
+  margin: 15px;
+  text-transform: uppercase;
+  font-size: $btnSize;
+  letter-spacing: 2px;
+  color: $white;
+}

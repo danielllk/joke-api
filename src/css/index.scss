@@ -1,0 +1,18 @@
+@import "./variables", "./mixins", "./home", "./library";
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  color: $white;
+  font-family: Tahoma, sans-serif;
+  letter-spacing: 2px;
+}
+p {
+  background: transparent;
+  color: $white;
+  font-size: $regular;
+}
+body {
+  background-color: #000000;
+  background-image: url("../img/back.png");
+}

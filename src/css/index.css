@@ -1,0 +1,211 @@
+.Home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.Home .joke-container {
+  padding: 15px;
+  background-color: #111;
+  border: 2px solid #262626;
+  max-width: 800px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .Home .joke-container {
+    min-width: 800px;
+    padding: 50px;
+  }
+}
+
+.Home .joke-container div {
+  margin: auto;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.Home .joke-container div .img-library {
+  width: 50px;
+}
+
+.Home .joke-container div #joke-test {
+  padding: 15px;
+}
+
+.Home .joke-container div button {
+  background-color: #4d004d;
+  border: 1px solid #800080;
+  padding: 10px 25px;
+  margin: 15px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #cccccc;
+}
+
+.Home .joke-container div .save-btn-disable {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.Home .joke-container .go-library {
+  max-width: 100px;
+  border: 1px solid #262626;
+  padding: 10px;
+}
+
+.Home .joke-container .go-library:hover {
+  background-color: #262626;
+}
+
+.Library {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 25vh 0;
+}
+
+.Library .library-container {
+  padding: 15px;
+  background-color: #111;
+  border: 2px solid #262626;
+  max-width: 800px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .Library .library-container {
+    min-width: 800px;
+    padding: 50px;
+  }
+}
+
+.Library .library-container .chosen-joke-box {
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #262626;
+}
+
+.Library .library-container .chosen-joke-box .stars-active .react-stars {
+  margin: auto;
+}
+
+.Library .library-container .chosen-joke-box .stars-disable {
+  display: none;
+}
+
+.Library .library-container .filter-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 500px) {
+  .Library .library-container .filter-stars {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.Library .library-container .filter-stars .filter-star {
+  border: 1px solid orange;
+  max-width: 200px;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.Library .library-container .filter-stars .filter-star span {
+  cursor: pointer;
+}
+
+.Library .library-container .filter-by {
+  font-size: 10px;
+}
+
+.Library .library-container .img-home {
+  width: 45px;
+}
+
+.Library .library-container p {
+  padding: 15px;
+}
+
+.Library .library-container .go-home {
+  max-width: 100px;
+  border: 1px solid #262626;
+  padding: 10px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.Library .library-container .go-home p {
+  padding: 0;
+}
+
+.Library .library-container .go-home:hover {
+  background-color: #262626;
+}
+
+.Library .img-delete {
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  opacity: 0.2;
+}
+
+.Library .img-delete:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #cccccc;
+  font-family: Tahoma, sans-serif;
+  letter-spacing: 2px;
+}
+
+p {
+  background: transparent;
+  color: #cccccc;
+  font-size: 13px;
+}
+
+body {
+  background-color: #000000;
+  background-image: url("../img/back.png");
+}
+/*# sourceMappingURL=index.css.map */
